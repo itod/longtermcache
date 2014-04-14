@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>LTCBrowser.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
+		<key>LTCDemoApp.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>LongTermCache.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>D34F7896164C3A9700C5C25A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D37BD7CF16530B0C0042E9C1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D39CB542164DBB44009927F7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D39CB568164DBB45009927F7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

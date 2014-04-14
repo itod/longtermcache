@@ -1,0 +1,854 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D34F789B164C3A9700C5C25A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D34F789A164C3A9700C5C25A /* Foundation.framework */; };
+		D34F78D2164C3C4400C5C25A /* LongTermCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D34F78CD164C3C4400C5C25A /* LongTermCache.m */; };
+		D34F78D3164C3C4400C5C25A /* LongTermCacheEvictionPolicyDefault.m in Sources */ = {isa = PBXBuildFile; fileRef = D34F78CF164C3C4400C5C25A /* LongTermCacheEvictionPolicyDefault.m */; };
+		D34F78D7164C3C7C00C5C25A /* LongTermCache.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D34F78D6164C3C7600C5C25A /* LongTermCache.h */; };
+		D3591F2C18FC2F1B000295EC /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D34F7901164C6F6A00C5C25A /* libOCMock.a */; };
+		D3591F2E18FC3054000295EC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3591F2D18FC3054000295EC /* XCTest.framework */; };
+		D37BD7DE16530B0C0042E9C1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D37BD7DC16530B0C0042E9C1 /* InfoPlist.strings */; };
+		D37BD7E016530B0C0042E9C1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D37BD7DF16530B0C0042E9C1 /* main.m */; };
+		D37BD7E416530B0C0042E9C1 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = D37BD7E216530B0C0042E9C1 /* Credits.rtf */; };
+		D37BD7E716530B0C0042E9C1 /* LTCBDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = D37BD7E616530B0C0042E9C1 /* LTCBDocument.m */; };
+		D37BD7EA16530B0C0042E9C1 /* LTCBDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = D37BD7E816530B0C0042E9C1 /* LTCBDocument.xib */; };
+		D37BD7ED16530B0D0042E9C1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D37BD7EB16530B0D0042E9C1 /* MainMenu.xib */; };
+		D37BD8C816533FCE0042E9C1 /* LongTermCacheItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D39CB593164DF25E009927F7 /* LongTermCacheItem.m */; };
+		D37BD939165456CE0042E9C1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D37BD938165456CE0042E9C1 /* Cocoa.framework */; };
+		D39CB54B164DBB45009927F7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D39CB54A164DBB45009927F7 /* CoreGraphics.framework */; };
+		D39CB551164DBB45009927F7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D39CB54F164DBB45009927F7 /* InfoPlist.strings */; };
+		D39CB553164DBB45009927F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D39CB552164DBB45009927F7 /* main.m */; };
+		D39CB557164DBB45009927F7 /* LTCDemoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D39CB556164DBB45009927F7 /* LTCDemoAppDelegate.m */; };
+		D39CB559164DBB45009927F7 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D39CB558164DBB45009927F7 /* Default.png */; };
+		D39CB55B164DBB45009927F7 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D39CB55A164DBB45009927F7 /* Default@2x.png */; };
+		D39CB55D164DBB45009927F7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D39CB55C164DBB45009927F7 /* Default-568h@2x.png */; };
+		D39CB560164DBB45009927F7 /* LTCDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D39CB55F164DBB45009927F7 /* LTCDemoViewController.m */; };
+		D39CB563164DBB45009927F7 /* LTCDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D39CB561164DBB45009927F7 /* LTCDemoViewController.xib */; };
+		D39CB575164DBB45009927F7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D39CB573164DBB45009927F7 /* InfoPlist.strings */; };
+		D39CB578164DBB45009927F7 /* LTCDefaultLongTermCacheTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D39CB577164DBB45009927F7 /* LTCDefaultLongTermCacheTest.m */; };
+		D39CB581164DC91D009927F7 /* libLongTermCache.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D34F7897164C3A9700C5C25A /* libLongTermCache.a */; };
+		D39CB582164DC92A009927F7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D39CB53C164DB582009927F7 /* UIKit.framework */; };
+		D39CB583164DC932009927F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D34F789A164C3A9700C5C25A /* Foundation.framework */; };
+		D39CB584164DC97A009927F7 /* LongTermCacheEvictionPolicy.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D34F78D8164C3EAE00C5C25A /* LongTermCacheEvictionPolicy.h */; };
+		D39CB587164DCACB009927F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D34F789A164C3A9700C5C25A /* Foundation.framework */; };
+		D39CB588164DCACD009927F7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D39CB53C164DB582009927F7 /* UIKit.framework */; };
+		D39CB589164DCAD0009927F7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D39CB54A164DBB45009927F7 /* CoreGraphics.framework */; };
+		D39CB591164DD454009927F7 /* LTCDefaultLongTermCacheEvictionPolicyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D39CB590164DD454009927F7 /* LTCDefaultLongTermCacheEvictionPolicyTest.m */; };
+		D39CB5961651B438009927F7 /* LongTermCacheItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D39CB593164DF25E009927F7 /* LongTermCacheItem.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D39CB56E164DBB45009927F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D34F788E164C3A9700C5C25A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D39CB542164DBB44009927F7;
+			remoteInfo = LTCDemoApp;
+		};
+		D39CB57F164DC915009927F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D34F788E164C3A9700C5C25A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D34F7896164C3A9700C5C25A;
+			remoteInfo = LongTermCache;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D34F7895164C3A9700C5C25A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				D39CB584164DC97A009927F7 /* LongTermCacheEvictionPolicy.h in CopyFiles */,
+				D34F78D7164C3C7C00C5C25A /* LongTermCache.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D34F7897164C3A9700C5C25A /* libLongTermCache.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLongTermCache.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D34F789A164C3A9700C5C25A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D34F789E164C3A9700C5C25A /* LongTermCache-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "LongTermCache-Prefix.pch"; path = "src/LongTermCache-Prefix.pch"; sourceTree = "<group>"; };
+		D34F78CD164C3C4400C5C25A /* LongTermCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LongTermCache.m; path = src/LongTermCache.m; sourceTree = SOURCE_ROOT; };
+		D34F78CE164C3C4400C5C25A /* LongTermCacheEvictionPolicyDefault.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LongTermCacheEvictionPolicyDefault.h; path = src/LongTermCacheEvictionPolicyDefault.h; sourceTree = SOURCE_ROOT; };
+		D34F78CF164C3C4400C5C25A /* LongTermCacheEvictionPolicyDefault.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LongTermCacheEvictionPolicyDefault.m; path = src/LongTermCacheEvictionPolicyDefault.m; sourceTree = SOURCE_ROOT; };
+		D34F78D6164C3C7600C5C25A /* LongTermCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LongTermCache.h; path = include/LongTermCache/LongTermCache.h; sourceTree = SOURCE_ROOT; };
+		D34F78D8164C3EAE00C5C25A /* LongTermCacheEvictionPolicy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LongTermCacheEvictionPolicy.h; path = include/LongTermCache/LongTermCacheEvictionPolicy.h; sourceTree = SOURCE_ROOT; };
+		D34F78DB164C441400C5C25A /* LTCUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LTCUtils.h; path = src/LTCUtils.h; sourceTree = SOURCE_ROOT; };
+		D34F7901164C6F6A00C5C25A /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOCMock.a; path = lib/OCMock/libOCMock.a; sourceTree = "<group>"; };
+		D3591F2D18FC3054000295EC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D37BD7D016530B0C0042E9C1 /* LTCBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LTCBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D37BD7DB16530B0C0042E9C1 /* LTCBrowser-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LTCBrowser-Info.plist"; sourceTree = "<group>"; };
+		D37BD7DD16530B0C0042E9C1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D37BD7DF16530B0C0042E9C1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D37BD7E116530B0C0042E9C1 /* LTCBrowser-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LTCBrowser-Prefix.pch"; sourceTree = "<group>"; };
+		D37BD7E316530B0C0042E9C1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		D37BD7E516530B0C0042E9C1 /* LTCBDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTCBDocument.h; sourceTree = "<group>"; };
+		D37BD7E616530B0C0042E9C1 /* LTCBDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTCBDocument.m; sourceTree = "<group>"; };
+		D37BD7E916530B0C0042E9C1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/LTCBDocument.xib; sourceTree = "<group>"; };
+		D37BD7EC16530B0D0042E9C1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		D37BD938165456CE0042E9C1 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		D37BD93C165457990042E9C1 /* LTCTestUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTCTestUtils.h; sourceTree = "<group>"; };
+		D39CB53C164DB582009927F7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D39CB543164DBB45009927F7 /* LTCDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LTCDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D39CB54A164DBB45009927F7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D39CB54E164DBB45009927F7 /* LTCDemoApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LTCDemoApp-Info.plist"; sourceTree = "<group>"; };
+		D39CB550164DBB45009927F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D39CB552164DBB45009927F7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D39CB554164DBB45009927F7 /* LTCDemoApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LTCDemoApp-Prefix.pch"; sourceTree = "<group>"; };
+		D39CB555164DBB45009927F7 /* LTCDemoAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTCDemoAppDelegate.h; sourceTree = "<group>"; };
+		D39CB556164DBB45009927F7 /* LTCDemoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTCDemoAppDelegate.m; sourceTree = "<group>"; };
+		D39CB558164DBB45009927F7 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		D39CB55A164DBB45009927F7 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		D39CB55C164DBB45009927F7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		D39CB55E164DBB45009927F7 /* LTCDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTCDemoViewController.h; sourceTree = "<group>"; };
+		D39CB55F164DBB45009927F7 /* LTCDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTCDemoViewController.m; sourceTree = "<group>"; };
+		D39CB562164DBB45009927F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/LTCDemoViewController.xib; sourceTree = "<group>"; };
+		D39CB569164DBB45009927F7 /* LTCDemoAppTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LTCDemoAppTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D39CB572164DBB45009927F7 /* LTCDemoAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LTCDemoAppTests-Info.plist"; sourceTree = "<group>"; };
+		D39CB574164DBB45009927F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D39CB576164DBB45009927F7 /* LTCDefaultLongTermCacheTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTCDefaultLongTermCacheTest.h; sourceTree = "<group>"; };
+		D39CB577164DBB45009927F7 /* LTCDefaultLongTermCacheTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTCDefaultLongTermCacheTest.m; sourceTree = "<group>"; };
+		D39CB58F164DD454009927F7 /* LTCDefaultLongTermCacheEvictionPolicyTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTCDefaultLongTermCacheEvictionPolicyTest.h; sourceTree = "<group>"; };
+		D39CB590164DD454009927F7 /* LTCDefaultLongTermCacheEvictionPolicyTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTCDefaultLongTermCacheEvictionPolicyTest.m; sourceTree = "<group>"; };
+		D39CB592164DF25E009927F7 /* LongTermCacheItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LongTermCacheItem.h; path = src/LongTermCacheItem.h; sourceTree = SOURCE_ROOT; };
+		D39CB593164DF25E009927F7 /* LongTermCacheItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LongTermCacheItem.m; path = src/LongTermCacheItem.m; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D34F7894164C3A9700C5C25A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D34F789B164C3A9700C5C25A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D37BD7CD16530B0C0042E9C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D37BD939165456CE0042E9C1 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D39CB540164DBB44009927F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D39CB581164DC91D009927F7 /* libLongTermCache.a in Frameworks */,
+				D39CB583164DC932009927F7 /* Foundation.framework in Frameworks */,
+				D39CB582164DC92A009927F7 /* UIKit.framework in Frameworks */,
+				D39CB54B164DBB45009927F7 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D39CB565164DBB45009927F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3591F2C18FC2F1B000295EC /* libOCMock.a in Frameworks */,
+				D3591F2E18FC3054000295EC /* XCTest.framework in Frameworks */,
+				D39CB588164DCACD009927F7 /* UIKit.framework in Frameworks */,
+				D39CB589164DCAD0009927F7 /* CoreGraphics.framework in Frameworks */,
+				D39CB587164DCACB009927F7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D34F788C164C3A9700C5C25A = {
+			isa = PBXGroup;
+			children = (
+				D34F789C164C3A9700C5C25A /* LongTermCache */,
+				D39CB54C164DBB45009927F7 /* LTCDemoApp */,
+				D39CB570164DBB45009927F7 /* LTCDemoAppTests */,
+				D37BD7D916530B0C0042E9C1 /* LTCBrowser */,
+				D34F7899164C3A9700C5C25A /* Lib */,
+				D34F7898164C3A9700C5C25A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D34F7898164C3A9700C5C25A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D34F7897164C3A9700C5C25A /* libLongTermCache.a */,
+				D39CB543164DBB45009927F7 /* LTCDemoApp.app */,
+				D39CB569164DBB45009927F7 /* LTCDemoAppTests.octest */,
+				D37BD7D016530B0C0042E9C1 /* LTCBrowser.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D34F7899164C3A9700C5C25A /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				D37BD93B165456E90042E9C1 /* iOS */,
+				D37BD93A165456DB0042E9C1 /* OS X */,
+			);
+			name = Lib;
+			sourceTree = "<group>";
+		};
+		D34F789C164C3A9700C5C25A /* LongTermCache */ = {
+			isa = PBXGroup;
+			children = (
+				D34F78DB164C441400C5C25A /* LTCUtils.h */,
+				D34F78D6164C3C7600C5C25A /* LongTermCache.h */,
+				D34F78CD164C3C4400C5C25A /* LongTermCache.m */,
+				D34F78D8164C3EAE00C5C25A /* LongTermCacheEvictionPolicy.h */,
+				D34F78CE164C3C4400C5C25A /* LongTermCacheEvictionPolicyDefault.h */,
+				D34F78CF164C3C4400C5C25A /* LongTermCacheEvictionPolicyDefault.m */,
+				D39CB592164DF25E009927F7 /* LongTermCacheItem.h */,
+				D39CB593164DF25E009927F7 /* LongTermCacheItem.m */,
+				D34F789D164C3A9700C5C25A /* Supporting Files */,
+			);
+			path = LongTermCache;
+			sourceTree = "<group>";
+		};
+		D34F789D164C3A9700C5C25A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D34F789E164C3A9700C5C25A /* LongTermCache-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D37BD7D916530B0C0042E9C1 /* LTCBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				D37BD7E516530B0C0042E9C1 /* LTCBDocument.h */,
+				D37BD7E616530B0C0042E9C1 /* LTCBDocument.m */,
+				D37BD7E816530B0C0042E9C1 /* LTCBDocument.xib */,
+				D37BD7EB16530B0D0042E9C1 /* MainMenu.xib */,
+				D37BD7DA16530B0C0042E9C1 /* Supporting Files */,
+			);
+			path = LTCBrowser;
+			sourceTree = "<group>";
+		};
+		D37BD7DA16530B0C0042E9C1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D37BD7DB16530B0C0042E9C1 /* LTCBrowser-Info.plist */,
+				D37BD7DC16530B0C0042E9C1 /* InfoPlist.strings */,
+				D37BD7DF16530B0C0042E9C1 /* main.m */,
+				D37BD7E116530B0C0042E9C1 /* LTCBrowser-Prefix.pch */,
+				D37BD7E216530B0C0042E9C1 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D37BD93A165456DB0042E9C1 /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				D37BD938165456CE0042E9C1 /* Cocoa.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		D37BD93B165456E90042E9C1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D34F7901164C6F6A00C5C25A /* libOCMock.a */,
+				D3591F2D18FC3054000295EC /* XCTest.framework */,
+				D39CB54A164DBB45009927F7 /* CoreGraphics.framework */,
+				D34F789A164C3A9700C5C25A /* Foundation.framework */,
+				D39CB53C164DB582009927F7 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		D39CB54C164DBB45009927F7 /* LTCDemoApp */ = {
+			isa = PBXGroup;
+			children = (
+				D39CB555164DBB45009927F7 /* LTCDemoAppDelegate.h */,
+				D39CB556164DBB45009927F7 /* LTCDemoAppDelegate.m */,
+				D39CB55E164DBB45009927F7 /* LTCDemoViewController.h */,
+				D39CB55F164DBB45009927F7 /* LTCDemoViewController.m */,
+				D39CB561164DBB45009927F7 /* LTCDemoViewController.xib */,
+				D39CB54D164DBB45009927F7 /* Supporting Files */,
+			);
+			path = LTCDemoApp;
+			sourceTree = "<group>";
+		};
+		D39CB54D164DBB45009927F7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D39CB54E164DBB45009927F7 /* LTCDemoApp-Info.plist */,
+				D39CB54F164DBB45009927F7 /* InfoPlist.strings */,
+				D39CB552164DBB45009927F7 /* main.m */,
+				D39CB554164DBB45009927F7 /* LTCDemoApp-Prefix.pch */,
+				D39CB558164DBB45009927F7 /* Default.png */,
+				D39CB55A164DBB45009927F7 /* Default@2x.png */,
+				D39CB55C164DBB45009927F7 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D39CB570164DBB45009927F7 /* LTCDemoAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				D37BD93C165457990042E9C1 /* LTCTestUtils.h */,
+				D39CB576164DBB45009927F7 /* LTCDefaultLongTermCacheTest.h */,
+				D39CB577164DBB45009927F7 /* LTCDefaultLongTermCacheTest.m */,
+				D39CB58F164DD454009927F7 /* LTCDefaultLongTermCacheEvictionPolicyTest.h */,
+				D39CB590164DD454009927F7 /* LTCDefaultLongTermCacheEvictionPolicyTest.m */,
+				D39CB571164DBB45009927F7 /* Supporting Files */,
+			);
+			path = LTCDemoAppTests;
+			sourceTree = "<group>";
+		};
+		D39CB571164DBB45009927F7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D39CB572164DBB45009927F7 /* LTCDemoAppTests-Info.plist */,
+				D39CB573164DBB45009927F7 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D34F7896164C3A9700C5C25A /* LongTermCache */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D34F78BC164C3A9700C5C25A /* Build configuration list for PBXNativeTarget "LongTermCache" */;
+			buildPhases = (
+				D34F7893164C3A9700C5C25A /* Sources */,
+				D34F7894164C3A9700C5C25A /* Frameworks */,
+				D34F7895164C3A9700C5C25A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LongTermCache;
+			productName = LongTermCache;
+			productReference = D34F7897164C3A9700C5C25A /* libLongTermCache.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D37BD7CF16530B0C0042E9C1 /* LTCBrowser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D37BD7EE16530B0D0042E9C1 /* Build configuration list for PBXNativeTarget "LTCBrowser" */;
+			buildPhases = (
+				D37BD7CC16530B0C0042E9C1 /* Sources */,
+				D37BD7CD16530B0C0042E9C1 /* Frameworks */,
+				D37BD7CE16530B0C0042E9C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LTCBrowser;
+			productName = LTCBrowser;
+			productReference = D37BD7D016530B0C0042E9C1 /* LTCBrowser.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D39CB542164DBB44009927F7 /* LTCDemoApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D39CB579164DBB45009927F7 /* Build configuration list for PBXNativeTarget "LTCDemoApp" */;
+			buildPhases = (
+				D39CB53F164DBB44009927F7 /* Sources */,
+				D39CB540164DBB44009927F7 /* Frameworks */,
+				D39CB541164DBB44009927F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D39CB580164DC915009927F7 /* PBXTargetDependency */,
+			);
+			name = LTCDemoApp;
+			productName = LTCDemoApp;
+			productReference = D39CB543164DBB45009927F7 /* LTCDemoApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D39CB568164DBB45009927F7 /* LTCDemoAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D39CB57C164DBB45009927F7 /* Build configuration list for PBXNativeTarget "LTCDemoAppTests" */;
+			buildPhases = (
+				D39CB564164DBB45009927F7 /* Sources */,
+				D39CB565164DBB45009927F7 /* Frameworks */,
+				D39CB566164DBB45009927F7 /* Resources */,
+				D39CB567164DBB45009927F7 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D39CB56F164DBB45009927F7 /* PBXTargetDependency */,
+			);
+			name = LTCDemoAppTests;
+			productName = LTCDemoAppTests;
+			productReference = D39CB569164DBB45009927F7 /* LTCDemoAppTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D34F788E164C3A9700C5C25A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastTestingUpgradeCheck = 0510;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Yahoo!";
+			};
+			buildConfigurationList = D34F7891164C3A9700C5C25A /* Build configuration list for PBXProject "LongTermCache" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D34F788C164C3A9700C5C25A;
+			productRefGroup = D34F7898164C3A9700C5C25A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D34F7896164C3A9700C5C25A /* LongTermCache */,
+				D39CB542164DBB44009927F7 /* LTCDemoApp */,
+				D39CB568164DBB45009927F7 /* LTCDemoAppTests */,
+				D37BD7CF16530B0C0042E9C1 /* LTCBrowser */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D37BD7CE16530B0C0042E9C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D37BD7DE16530B0C0042E9C1 /* InfoPlist.strings in Resources */,
+				D37BD7E416530B0C0042E9C1 /* Credits.rtf in Resources */,
+				D37BD7EA16530B0C0042E9C1 /* LTCBDocument.xib in Resources */,
+				D37BD7ED16530B0D0042E9C1 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D39CB541164DBB44009927F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D39CB551164DBB45009927F7 /* InfoPlist.strings in Resources */,
+				D39CB559164DBB45009927F7 /* Default.png in Resources */,
+				D39CB55B164DBB45009927F7 /* Default@2x.png in Resources */,
+				D39CB55D164DBB45009927F7 /* Default-568h@2x.png in Resources */,
+				D39CB563164DBB45009927F7 /* LTCDemoViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D39CB566164DBB45009927F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D39CB575164DBB45009927F7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D39CB567164DBB45009927F7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D34F7893164C3A9700C5C25A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D34F78D2164C3C4400C5C25A /* LongTermCache.m in Sources */,
+				D34F78D3164C3C4400C5C25A /* LongTermCacheEvictionPolicyDefault.m in Sources */,
+				D39CB5961651B438009927F7 /* LongTermCacheItem.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D37BD7CC16530B0C0042E9C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D37BD7E016530B0C0042E9C1 /* main.m in Sources */,
+				D37BD7E716530B0C0042E9C1 /* LTCBDocument.m in Sources */,
+				D37BD8C816533FCE0042E9C1 /* LongTermCacheItem.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D39CB53F164DBB44009927F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D39CB553164DBB45009927F7 /* main.m in Sources */,
+				D39CB557164DBB45009927F7 /* LTCDemoAppDelegate.m in Sources */,
+				D39CB560164DBB45009927F7 /* LTCDemoViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D39CB564164DBB45009927F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D39CB578164DBB45009927F7 /* LTCDefaultLongTermCacheTest.m in Sources */,
+				D39CB591164DD454009927F7 /* LTCDefaultLongTermCacheEvictionPolicyTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D39CB56F164DBB45009927F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D39CB542164DBB44009927F7 /* LTCDemoApp */;
+			targetProxy = D39CB56E164DBB45009927F7 /* PBXContainerItemProxy */;
+		};
+		D39CB580164DC915009927F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D34F7896164C3A9700C5C25A /* LongTermCache */;
+			targetProxy = D39CB57F164DC915009927F7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D37BD7DC16530B0C0042E9C1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D37BD7DD16530B0C0042E9C1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D37BD7E216530B0C0042E9C1 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D37BD7E316530B0C0042E9C1 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		D37BD7E816530B0C0042E9C1 /* LTCBDocument.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D37BD7E916530B0C0042E9C1 /* en */,
+			);
+			name = LTCBDocument.xib;
+			sourceTree = "<group>";
+		};
+		D37BD7EB16530B0D0042E9C1 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D37BD7EC16530B0D0042E9C1 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		D39CB54F164DBB45009927F7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D39CB550164DBB45009927F7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D39CB561164DBB45009927F7 /* LTCDemoViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D39CB562164DBB45009927F7 /* en */,
+			);
+			name = LTCDemoViewController.xib;
+			sourceTree = "<group>";
+		};
+		D39CB573164DBB45009927F7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D39CB574164DBB45009927F7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D34F78BA164C3A9700C5C25A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D34F78BB164C3A9700C5C25A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D34F78BD164C3A9700C5C25A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/LongTermCache.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "src/LongTermCache-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/include\"";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D34F78BE164C3A9700C5C25A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/LongTermCache.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "src/LongTermCache-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					NDEBUG,
+					NS_BLOCK_ASSERTIONS,
+				);
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/include\"";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		D37BD7EF16530B0D0042E9C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LTCBrowser/LTCBrowser-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/include/LongTermCache\"",
+					"\"$(SRCROOT)/src\"",
+				);
+				INFOPLIST_FILE = "LTCBrowser/LTCBrowser-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D37BD7F016530B0D0042E9C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LTCBrowser/LTCBrowser-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/include/LongTermCache\"",
+					"\"$(SRCROOT)/src\"",
+				);
+				INFOPLIST_FILE = "LTCBrowser/LTCBrowser-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D39CB57A164DBB45009927F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LTCDemoApp/LTCDemoApp-Prefix.pch";
+				INFOPLIST_FILE = "LTCDemoApp/LTCDemoApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D39CB57B164DBB45009927F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LTCDemoApp/LTCDemoApp-Prefix.pch";
+				INFOPLIST_FILE = "LTCDemoApp/LTCDemoApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D39CB57D164DBB45009927F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LTCDemoApp.app/LTCDemoApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LTCDemoApp/LTCDemoApp-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/include/\"",
+					"\"$(SRCROOT)/lib/OCMock/include/\"",
+				);
+				INFOPLIST_FILE = "LTCDemoAppTests/LTCDemoAppTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(PROJECT_DIR)/lib/OCMock\"",
+				);
+				OTHER_LDFLAGS = (
+					"-force_load",
+					"\"$(SRCROOT)/lib/OCMock/libOCMock.a\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		D39CB57E164DBB45009927F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LTCDemoApp.app/LTCDemoApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LTCDemoApp/LTCDemoApp-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/include/\"",
+					"\"$(SRCROOT)/lib/OCMock/include/\"",
+				);
+				INFOPLIST_FILE = "LTCDemoAppTests/LTCDemoAppTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(PROJECT_DIR)/lib/OCMock\"",
+				);
+				OTHER_LDFLAGS = (
+					"-force_load",
+					"\"$(SRCROOT)/lib/OCMock/libOCMock.a\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D34F7891164C3A9700C5C25A /* Build configuration list for PBXProject "LongTermCache" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D34F78BA164C3A9700C5C25A /* Debug */,
+				D34F78BB164C3A9700C5C25A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D34F78BC164C3A9700C5C25A /* Build configuration list for PBXNativeTarget "LongTermCache" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D34F78BD164C3A9700C5C25A /* Debug */,
+				D34F78BE164C3A9700C5C25A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D37BD7EE16530B0D0042E9C1 /* Build configuration list for PBXNativeTarget "LTCBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D37BD7EF16530B0D0042E9C1 /* Debug */,
+				D37BD7F016530B0D0042E9C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D39CB579164DBB45009927F7 /* Build configuration list for PBXNativeTarget "LTCDemoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D39CB57A164DBB45009927F7 /* Debug */,
+				D39CB57B164DBB45009927F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D39CB57C164DBB45009927F7 /* Build configuration list for PBXNativeTarget "LTCDemoAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D39CB57D164DBB45009927F7 /* Debug */,
+				D39CB57E164DBB45009927F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D34F788E164C3A9700C5C25A /* Project object */;
+}
